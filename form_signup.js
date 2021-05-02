@@ -83,7 +83,8 @@ function formValidate(){
 	var mdpC = mdpConfirm(mdpValue,confirm_mdpValue);
 	var consentV = consentCheck(consentElement);
 
-	console.log(regexV && mdpC && consentV);
+	//console.log(regexV && mdpC && consentV);
+	if (regexV && mdpC && consentV) {alert("Demande d'inscription enregistrée");}
 	
 	return (regexV && mdpC && consentV);
 
