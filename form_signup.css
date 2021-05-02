@@ -152,52 +152,39 @@ background: linear-gradient(to top, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Fir
   align-items: center;
   padding: 0.375rem 0.75rem;
   /*margin-bottom: 0;*/
-  font-size: 1rem;
+  font-size: 0.85rem;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.15;
   color: #495057;
   /*text-align: center;*/
   white-space: nowrap;
   background-color: #e9ecef;
   border: 1px solid #ced4da;
-  border-top-left-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem;
-  margin-left: 10px;
-  min-width: 100px;
-}
-
-.input-test {
-	border-top-right-radius: 0.25rem;
-  	border-bottom-right-radius: 0.25rem;
-  	line-height: 1.5;
-  	margin-left: -5px;
-  	padding: 0.375rem 0.75rem;
-  	transition: none;
-  	min-width: 100px;
-}
-
-.label-gender {
-  /*display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;*/
-  align-items: center;
-  padding: 0.375rem 0.75rem;
-  /*margin-bottom: 0;*/
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #495057;
-  text-align: center;
-  white-space: nowrap;
-  background-color: #e9ecef;
-  border: 1px solid #ced4da;
+  /*border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;*/
   border-radius: 0.25rem;
-  min-width: 90px;
+  margin-left: 10px;
+  min-width: 50px;
 }
+
+#tableZoneID, #tableZoneMDP {
+	width: 100%;
+}
+.input-test {
+  	border-radius: 0.25rem;
+	/*border-top-right-radius: 0.25rem;
+  	border-bottom-right-radius: 0.25rem;*/
+  	line-height: 1.15;
+  	/*margin-left: -5px;*/
+  	/*padding: 0.375rem 0.75rem;*/
+  	transition: none;
+  	min-width: 140px;
+}
+
 
 .zoneForm{
 	border: 1px solid #ced4da;
 	border-radius: 0.5rem;
-	padding: 15px;
+	padding: 10px;
 }
 

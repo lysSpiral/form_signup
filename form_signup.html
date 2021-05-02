@@ -57,48 +57,59 @@
 		<form method="_POST" onsubmit="return formValidate()" >
 
  			<div id="divZoneId" class="container zoneForm">
-	 			<div class="form-group" id="divPseudo">
+ 				<table id="tableZoneID">
+ 					<tr>
+ 					<td>
+ 						
+
 	 				<label for="pseudo" class="label-input" >Pseudo</label>
 	 				<input id="pseudo" name="pseudo" type="text" class="input-test" required>
+	 				
+
+ 					</td>
+ 					<td >
+ 						
+
+	 				<label for="email" class="label-input" >Email</label>
+	 				<input id="email" name="email" type="email" class="input-test" required>
+
+	 				</td>
+ 					</tr>
+ 				</table>
+
 	 				<span id="pseudoValid"></span>
 	 				<br>
 	 				<small id="rulesPseudo">Le pseudo doit contenir de 4 à 15 caractères, dont au moins 1 majuscule et 1 minuscule.<br>Les chiffres et les caractères spéciaux autres que "_", -" et "." ne sont pas autorisés.</small>
-	 			</div>
-
-	 			<div class="form-group" id="divEmail">
-	 				<label for="email" class="label-input" >Email</label>
-	 				<input id="email" name="email" type="email" class="input-test" required>
-	 			</div>
-
-	 		<!-- 	<div class="form-group form-check" id="divGender">
-	 				  <input id="female" name="gender" type="radio" required>
-	 				  <label for="female" class="label-gender">Féminin</label>
-	 				
-
-	 				 <input id="male" name="gender" type="radio">
-	 				 <label for="male" class="label-gender" >Homme</label>
-	 				 
-	 
-	 				  <input id="other" name="gender" type="radio">
-	 				 <label for="other" class="label-gender" >Autre</label>
-	 				
-	 			</div> -->
  			</div>
  			<br>
 
  			<div id="divZoneMDP" class="container zoneForm">
-	 			<div class="form-group" id="divMDP">
+ 				<table id="tableZoneMDP">
+ 					<tr>
+ 						<td width="35%">
 	 				<label for="mdp" class="label-input" >Mot de passe</label>
+ 							
+ 						</td>
+ 						<td>
 	 				<input id="mdp" name="pseudo" type="password" class="input-test" required>
+ 						</td>
+ 						<td>
 	 				<span id="mdpValid"></span>
-
-	 			</div>
-	 			
-	 			<div class="form-group" id="divConfirmMDP">
+ 						</td>
+ 					</tr>
+ 					<tr>
+ 						<td width="35%">
 	 				<label for="confirm_mdp" class="label-input" >Confirmation du mot de passe</label>
+ 						</td>
+ 						<td>
 	 				<input id="confirm_mdp" name="confirm_mdp" type="password" class="input-test" required>
+	 					</td>
+	 					<td>
 	 				<span id="mdpConfirmValid"></span>
-	 			</div>
+ 						</td>
+ 					</tr>
+
+ 				</table>
 	 			<small id="rulesMDP">Le mot de passe doit contenir de 8 à 20 caractères, dont au moins 1 majuscule, 1 minuscule et 1 caractère spécial.</small>
  			</div>
  			<br>
