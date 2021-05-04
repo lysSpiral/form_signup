@@ -18,21 +18,21 @@ function regexValidate(pseudoValue, mdpValue) {
 
 	if (regexPseudo.test(pseudoValue)) {
 	 	textValidPseudo.textContent ="Pseudo validé";
-		textValidPseudo.className ="alert-success";
+		textValidPseudo.className ="alert-success valid-text";
 	}
 	else {
 		
 		textValidPseudo.textContent ="Pseudo invalide";
-		textValidPseudo.className ="alert-danger";
+		textValidPseudo.className ="alert-danger valid-text";
 	}
 
 	if (regexMDP.test(mdpValue)) {
 		textValidMDP.textContent ="Mot de passe validé";
-		textValidMDP.className ="alert-success";
+		textValidMDP.className ="alert-success valid-text";
 	}
 	else {
 		textValidMDP.textContent ="Mot de passe invalide";
-		textValidMDP.className ="alert-danger";
+		textValidMDP.className ="alert-danger valid-text";
 	}
 
 	console.log("test pseudo "+regexPseudo.test(pseudoValue));
@@ -47,12 +47,12 @@ function regexValidate(pseudoValue, mdpValue) {
 function mdpConfirm(mdpValue, confirm_mdpValue){
 	var textValidConfirmMDP= document.getElementById("mdpConfirmValid");
 	if (mdpValue === confirm_mdpValue) {
-		textValidConfirmMDP.textContent ="Les mots de de passe correspondent";
-		textValidConfirmMDP.className ="alert-success";
+		textValidConfirmMDP.textContent ="Les mots de passe correspondent";
+		textValidConfirmMDP.className ="alert-success valid-text";
 	}
 	else {
-		textValidConfirmMDP.textContent ="Les mots de de passe ne correspondent pas";
-		textValidConfirmMDP.className ="alert-danger";
+		textValidConfirmMDP.textContent ="Les mots de passe ne correspondent pas";
+		textValidConfirmMDP.className ="alert-danger valid-text";
 	}
 
 	console.log(mdpValue === confirm_mdpValue);
@@ -64,7 +64,9 @@ function consentCheck(consentElement) {
 	var textValidConsent= document.getElementById("consentValid");
 	if (!consentElement.checked){
 		textValidConsent.textContent ="Merci d'accepter les termes";
-		textValidConsent.className ="alert-danger";
+		textValidConsent.className ="alert-danger valid-text";
+	} else {
+		textValidConsent.style.display = "none";
 	}
 
 	console.log(consentElement.checked)
